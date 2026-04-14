@@ -1,0 +1,53 @@
+{
+  "model_type": "RandomForest",
+  "classes": [
+    "cardboard",
+    "metal",
+    "wall",
+    "wood"
+  ],
+  "label_encoding": {
+    "cardboard": 0,
+    "metal": 1,
+    "wall": 2,
+    "wood": 3
+  },
+  "features": [
+    "psd_energy",
+    "rms",
+    "distance_cm",
+    "echo_area",
+    "echo_noise_ratio",
+    "target_strength_dB",
+    "pulse_width_us",
+    "skewness",
+    "kurtosis",
+    "spectral_crest",
+    "rise_time_us",
+    "dominant_freq_hz",
+    "fall_time_us",
+    "zero_crossing_rate"
+  ],
+  "distance_buckets": [
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200
+  ],
+  "n_models": 19
+}
