@@ -1,0 +1,59 @@
+{
+  "model_type": "XGBoost",
+  "classes": [
+    "cardboard",
+    "metal",
+    "wall",
+    "wood"
+  ],
+  "label_encoding": {
+    "cardboard": 0,
+    "metal": 1,
+    "wall": 2,
+    "wood": 3
+  },
+  "features": [
+    "target_strength_dB_dnorm",
+    "echo_noise_ratio_dnorm",
+    "psd_energy_dnorm",
+    "echo_area_dnorm",
+    "pulse_width_us_dnorm",
+    "skewness_dnorm",
+    "fall_time_us_dnorm",
+    "rise_time_us_dnorm",
+    "spectral_crest_dnorm",
+    "dominant_freq_hz_dnorm",
+    "kurtosis_dnorm",
+    "zero_crossing_rate_dnorm"
+  ],
+  "normalisation": {
+    "amplitude_feats": [
+      "rms",
+      "peak_to_peak"
+    ],
+    "power_feats": [
+      "psd_energy",
+      "echo_area"
+    ],
+    "db_feats": [
+      "target_strength_dB",
+      "snr",
+      "echo_noise_ratio"
+    ],
+    "stable_feats": [
+      "kurtosis",
+      "skewness",
+      "zero_crossing_rate",
+      "crest_factor",
+      "pulse_width_us",
+      "rise_time_us",
+      "fall_time_us",
+      "spectral_centroid",
+      "spectral_crest",
+      "spectral_entropy",
+      "dominant_freq_hz",
+      "confidence"
+    ],
+    "d_ref_cm": 100.0
+  }
+}
